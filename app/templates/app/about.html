@@ -1,0 +1,103 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <h2 class="text-center text-primary mb-4 animate__animated animate__fadeIn">About Us</h2>
+    <div class="row container">
+        <p class="fs-4 text-center text-dark animate__animated animate__fadeIn animate__delay-1s bg-light p-4 rounded">
+            Welcome to Portify – your one-stop online destination for everything you need!
+            At Portify, we believe in making life simpler, stylish, and more convenient by bringing the best of fashion, lifestyle, and home essentials right to your doorstep. Whether you're looking for trendy T-shirts, durable shoes, elegant watches, or premium furniture to upgrade your living space, Portify has it all.
+        </p>
+    </div>
+
+    <h2 class="text-center text-white mt-5 mb-3 animate__animated animate__fadeIn animate__delay-2s bg-info p-3 rounded">Mission</h2>
+    <div class="row container fs-4 text-dark animate__animated animate__fadeIn animate__delay-3s bg-white p-4 rounded">
+        <ol class="list-group list-group-flush">
+            <li class="list-group-item list-item-style"><strong>Customer-Centric Shopping:</strong> To prioritize our customers by delivering a seamless and enjoyable online shopping experience tailored to their needs and preferences.</li>
+            <li class="list-group-item list-item-style"><strong>Quality Assurance:</strong> To ensure every product we offer meets the highest standards of durability, functionality, and style, giving our customers the best value for their money.</li>
+            <li class="list-group-item list-item-style"><strong>Affordability and Accessibility:</strong> To provide high-quality products at competitive prices and make them accessible to customers across all regions.</li>
+            <li class="list-group-item list-item-style"><strong>Innovation in E-Commerce:</strong> To continually enhance our platform by integrating advanced technology, making online shopping faster, smarter, and more convenient.</li>
+            <li class="list-group-item list-item-style"><strong>Sustainability Commitment:</strong> To adopt eco-friendly practices and promote sustainable products, contributing to a healthier planet and a better future for all.</li>
+        </ol>
+    </div>
+
+    <h2 class="text-center text-white mt-5 mb-3 animate__animated animate__fadeIn animate__delay-4s bg-warning p-3 rounded">Why Choose Us?</h2>
+    <div class="row container fs-4 text-dark animate__animated animate__fadeIn animate__delay-5s bg-light p-4 rounded">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item list-item-style"><strong>Diverse Collection:</strong> From everyday wear to luxury items, we curate a wide range of products to cater to all your needs.</li>
+            <li class="list-group-item list-item-style"><strong>Quality You Can Trust:</strong> We prioritize quality and ensure every item meets our high standards before it reaches you.</li>
+            <li class="list-group-item list-item-style"><strong>Affordable Prices:</strong> Get the best deals and competitive prices without compromising on quality.</li>
+            <li class="list-group-item list-item-style"><strong>Seamless Shopping Experience:</strong> Our user-friendly platform and responsive customer service make shopping a breeze.</li>
+            <li class="list-group-item list-item-style"><strong>Fast Delivery:</strong> With efficient delivery services, we ensure your products reach you on time, every time.</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .animate__animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+    .animate__fadeIn {
+        animation-name: fadeIn;
+    }
+    .animate__delay-1s {
+        animation-delay: 1s;
+    }
+    .animate__delay-2s {
+        animation-delay: 2s;
+    }
+    .animate__delay-3s {
+        animation-delay: 3s;
+    }
+    .animate__delay-4s {
+        animation-delay: 4s;
+    }
+    .animate__delay-5s {
+        animation-delay: 5s;
+    }
+    .list-item-style {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    }
+    .list-item-style:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .text-primary {
+        color: #007bff !important;
+    }
+    .text-white {
+        color: white !important;
+    }
+    .text-dark {
+        color: #343a40 !important;
+    }
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+    .bg-info {
+        background-color: #17a2b8 !important;
+    }
+    .bg-warning {
+        background-color: #ffc107 !important;
+    }
+    .p-4 {
+        padding: 1.5rem !important;
+    }
+    .p-3 {
+        padding: 1rem !important;
+    }
+    .rounded {
+        border-radius: 8px;
+    }
+    .fs-4 {
+        font-size: 1.25rem;
+    }
+</style>
+
+{% endblock main-content %}
